@@ -1,0 +1,109 @@
+.header{
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    height: 30px;
+}
+.left-section{
+    width: 220px;
+    display: grid;
+    grid-template-columns: 50px 150px;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle-section{
+    max-width: 650px;
+    flex: 1;
+    display: flex;
+    padding: 14px 10px;
+    align-items: center;
+}
+input{
+    flex: 1;
+    height: 50px;
+    max-width: 500px;
+    box-shadow: inset 0px 0px 4px rgba(78, 78, 78, 0.5);
+    border: 1px solid rgb(191, 191, 191);
+    width: 0;
+    padding-left: 10px;
+    font-size: 18px;
+}   
+.search-btn{
+    height: 51px;
+    width: 80px;
+    margin-left: -1px;
+    border: 1px solid rgb(168, 168, 168);
+}
+.mic-btn{
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 15px;
+}
+
+.right-section{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+    padding: 20px;
+    margin-right: 10px;
+}
+.right-section img{
+    height: 35px;
+}
+#channel-my-pfp{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: top;
+}
+.search-btn, .mic-btn, .upload-box, .notification, .more-apps{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-btn .tooltip,
+.mic-btn .tooltip,
+.upload-box .tooltip,
+.notification .tooltip,
+.more-apps .tooltip{
+    position: absolute;
+    color: white;
+    font-family: arial;
+    font-size: 14px;
+    background-color: rgb(154, 154, 154, 0.85);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.15s;
+    white-space: nowrap;
+    padding: 8px;
+}
+.search-btn:hover .tooltip,
+.mic-btn:hover .tooltip,
+.upload-box:hover .tooltip,
+.notification:hover .tooltip,
+.more-apps:hover .tooltip
+{
+    opacity: 1;
+}
+
+
+
